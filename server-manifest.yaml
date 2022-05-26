@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: jimsheldon/layercake-server:190239d3
+        image: <+artifact.image>
         env:
         - name: ATLAS_URI
           value: {{.Values.atlas_uri}}
