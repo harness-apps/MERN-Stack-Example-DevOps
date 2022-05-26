@@ -1,2 +1,3 @@
 atlas_uri: <+secrets.getValue("atlas_uri")>
+loadbalancer_ip: <+stage.spec.serviceConfig.serviceDefinition.spec.variables.loadbalancer_ip>
 server_image: <+artifact.image>
