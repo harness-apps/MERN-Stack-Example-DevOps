@@ -7,7 +7,6 @@ metadata:
     service: server
 spec:
   type: LoadBalancer
-  loadBalancerIP: {{.Values.loadbalancer_ip}}
   ports:
   - port: 80
     name: http
