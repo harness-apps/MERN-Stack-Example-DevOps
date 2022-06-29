@@ -20,7 +20,7 @@ metadata:
   labels:
     version: v1
 spec:
-  replicas: 1
+  replicas: {{.Values.deployment_replicas}}
   selector:
     matchLabels:
       app: server
@@ -42,4 +42,4 @@ spec:
             cpu: "100m"
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 5001
+        - containerPort: {{.Values.container_port}}
